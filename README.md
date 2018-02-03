@@ -1,16 +1,14 @@
 # simple-tcp-vpn-over-ssh-socks
 Poor-man's VPN for TCP traffic over SSH dynamic socks tunnel, uses Linux/iptables
 
----------------------------------------------------------------------------------------------------------
 Taken some TCP tunneling code from Christophe Devine, and turned it into a transparent socks proxy.
 This serves as a lightweight / poor-man's VPN connection, to combine firewalled networks into one.
 Requirements; use linux on your end, and you need to be able to connect to an SSH server on the
 network you want to reach. And the local and remote network IP-ranges should NOT overlap ;-)
 Note: this proxy ONLY works with TCP packets, not with UDP. So your DNS server won't work accross it.
---
+
 Created somewhere between 2002 and 2014. Feel free to use and modify to suit your needs.
 Thijs Kaper, 3 feb 2018.
----------------------------------------------------------------------------------------------------------
 
 Compile using gcc (c-compiler):
 ```sh
